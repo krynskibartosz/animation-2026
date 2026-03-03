@@ -1,0 +1,140 @@
+@import "@/app/styles/variables/breakpoints";
+
+.CustomMintingProcess{
+  height: 800vh;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 212rem;
+  text-align: center;
+
+  h1 {
+    width: 60%;
+  }
+
+  h6 {
+    color: var(--gray-700);
+  }
+}
+
+.abstract {
+  top: 66rem;
+  left: -20rem;
+  width: 1385rem;
+  height: 1550rem;
+  color: var(--gray-300);
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contentBlock{
+  position: absolute;
+  display: grid; 
+  place-items: center;
+  grid-auto-columns: 1fr; 
+  grid-template-areas: 
+    "description coin counter"; 
+  grid-template-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 0 0; 
+  max-width: 100%;
+  height: 100vh;
+  padding: 0 64rem;
+}
+
+.coin {
+  position: relative;
+  z-index: 2;
+  grid-area: coin;
+
+}
+
+.counter {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  grid-area: counter;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.description {
+  z-index: 2;
+  width: 100%;
+  padding-right: 144rem;
+}
+
+
+.marqueeBlock{
+  align-self: center;
+  margin-top: -5%;
+}
+
+@media (width<=$breakpoint-mob) {
+  .hero {
+    height: initial;
+    padding: 92rem 0 0;
+
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .abstract {
+    top: 227rem;
+    left: -166rem;
+    width: 511rem;
+    height: 568rem;
+    color: var(--gray-300);
+  }
+
+  .contentBlock {
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+      "counter"
+      "coin"
+      "description";
+    grid-template-rows: 1fr 248rem 1.5fr;
+    grid-template-columns: 1fr;
+    gap: 0 0;
+    height: 100vh;
+    padding: 0 24rem;
+  }
+
+  .counter {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 16rem;
+  }
+
+  .marqueeBlock{
+    margin-top: -40%;
+  }
+
+  .description {
+    flex-grow: 2;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 32rem;
+    padding-right: 0;
+    overflow: hidden;
+  }
+}

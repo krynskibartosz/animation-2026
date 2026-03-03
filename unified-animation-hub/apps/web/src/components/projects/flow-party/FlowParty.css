@@ -1,0 +1,28 @@
+@font-face {
+	src: url('/flow-party/fonts/63bf3e1c32ea7b11e01bdf94_HelveticaNeue-Light.otf') format('opentype');
+	font-family: 'helveticaNeue';
+	font-display: swap;
+}
+
+@font-face {
+	src: url('/flow-party/fonts/63bf3e1c32ea7b80ef1bdf9f_bodoni-seventytwo-itc-book-italic.ttf') format('truetype');
+	font-family: 'bodoniseventytwo';
+	font-display: swap;
+}
+
+@font-face {
+	src: url('/flow-party/fonts/63bf3e1c32ea7bb19e1bdfad_Humane-Medium.otf') format('opentype');
+	font-family: 'humaneMedium';
+	font-display: swap;
+}
+
+.flow-party-container {
+	overflow-x: hidden;
+	background-color: #000000;
+	color: #ffffff;
+	min-height: 100vh;
+}
+
+.flow-party-container::-webkit-scrollbar {
+	width: 0%;
+}

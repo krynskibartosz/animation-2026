@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'grotesk';
+    src: url('/ochi-design/assets/FoundersGrotesk-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nmontreal';
+    src: url('/ochi-design/assets/NeueMontreal-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.ochi-design-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    color: #212121;
+    font-family: 'nmontreal', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Ochi dark mode sections */
+.ochi-design-container .bg-zinc-900 {
+    background-color: #18181b;
+    color: #f1f1f1;
+}
+
+.ochi-design-container .text-zinc-900 {
+    color: #18181b;
+}

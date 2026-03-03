@@ -1,0 +1,123 @@
+@import "@/app/styles/variables/breakpoints";
+
+.ProductList {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  padding-top: 32rem;
+  
+    @media (width <= $breakpoint-mob) {
+      padding-top: 64rem;
+    }
+}
+
+.categoryList{
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 120rem;
+  column-gap: 24rem;
+  row-gap: 10rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  
+    &-product{
+      @media (width <= $breakpoint-mob) {
+        max-width: 144rem;
+      }
+      
+      
+        & > div:first-child{
+          @media (width <= $breakpoint-mob) {
+            width: 144rem;
+            height: 144rem;
+          }
+          
+          & > div{
+            @media (width <= $breakpoint-mob) {
+              width: 120rem;
+              height: 120rem;
+            }
+          }
+        }
+    }
+}
+
+
+.fullSize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 359rem;
+  height: 600rem;
+  margin: auto;
+  text-align: center;
+}
+
+.notFound {
+  h4 {
+    width: 100%; 
+    margin-top: 40rem;
+    margin-bottom: 24rem;
+
+    span {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      color: var(--primary-color);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  p {
+    color: var(--gray-800);
+    font:var(--font-l);
+  }
+}
+
+
+.loader {
+  width:75rem;
+  height: 75rem;
+  border: 2rem solid var(--gray-500);
+  border-top-color:var(--gray-700);
+  border-radius:50%;
+  animation:rotate 1s infinite ease;
+}
+
+@keyframes rotate{
+  100%{
+    rotate:360deg;
+  }
+}
+
+
+@media (width <= $breakpoint-mob) {
+  .ProductList{
+    h4 {
+      margin-top: 32rem;
+      margin-bottom: 16rem;
+    }
+  }
+
+  .categoryList{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24rem;
+    padding-top: 64rem;
+  }
+
+  .notFound {
+    width: 100%;
+    height: 400rem;
+    padding: 0 24rem;
+  }
+
+  .fullSize {
+    width: 100%;
+  }
+}

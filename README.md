@@ -1,133 +1,58 @@
-# Animation-2026 Projects Collection
+# Animation 2026
 
-Collection de 33 projets web modernes avec animations et effets visuels avancés.
+Collection de projets frontend orientés animation, WebGL, shaders, interfaces immersives et expérimentations visuelles.
 
-## Structure Organisation
+## Contenu du dépôt
 
-### 🎨 01-3d-webgl/
-Effets 3D, WebGL, Three.js et expérimentations graphiques
-- `3d-glass-effect` - Effet verre 3D avec React Three Fiber
-- `3d-image-cube` - Cube d'images 3D interactif
-- `3d-image-curve` - Courbes d'images 3D avec shaders
-- `3dbook-slider` - Slider livre 3D
-- `image-manipulation-with-webgl` - 9 démos de manipulation WebGL
+Le dépôt regroupe 35 projets principaux, organisés par thème :
 
-### 🏆 02-awwwards-sites/
-Sites award-winning et clones de références design
-- `Mason-Mint-Awwwards` - Site complet award-winning (343 fichiers)
-- `Elementis-SOTD` - Site of the Day
-- `awwwards-adidas` - Clone site Adidas
-- `awwwards-portfolio` - Portfolio style Awwwards
-- `the-line-awwwards-SOTM` - Site of the Month
-- `splyt-awwwards-website` - Site Splyt
-- `award-winning-website` - Site award-winning
+- `01-3d-webgl/` : scènes 3D, shaders, WebGL, Three.js
+- `02-awwwards-sites/` : clones et références type Awwwards
+- `03-portfolios/` : portfolios personnels et studios
+- `04-fluid-animations/` : simulations fluides et effets organiques
+- `05-ar-experimental/` : expériences AR et interfaces hybrides
+- `06-agency-corporate/` : sites d'agence et vitrines premium
+- `07-templates-components/` : composants et templates réutilisables
+- `08-learning-examples/` : démos pédagogiques et essais techniques
+- `09-codrops-experiments/` : expériences GSAP, shaders et transitions
+- `10-3d-commerce/` : interfaces e-commerce 3D
 
-### 👨‍💼 03-portfolios/
-Portfolios personnels et professionnels
-- `Axel-Vanhessche-Portfolio` - Portfolio personnel
-- `nextjs_portfolio` - Portfolio Next.js
-- `obys-clone` - Clone studio Obys
-- `musabhassan.com` - Portfolio personnel
+Le dépôt contient aussi :
 
-### 🌊 04-fluid-animations/
-Simulations fluides et animations organiques
-- `Fluid-simulation-experiment` - Simulation fluide avancée
-- `lusion-fluid-experiment` - Effets fluides Lusion
-- `animated-gradient` - Gradients animés modernes
+- `assets/` : médias source, vidéos, images et modèles 3D
+- `notes-evaluation/` : notes d'analyse et d'évaluation projet par projet
+- `apps/` : composants applicatifs isolés au niveau racine
+- `unified-animation-hub/` : espace de consolidation avec app web et scripts
+- `integration-guide.md` : guide d'intégration
+- `nextjsllms.txt` : notes de travail complémentaires
 
-### 🥽 05-ar-experimental/
-Réalité augmentée et projets expérimentaux
-- `makepill-redesign` - Redesign expérimental
+## Projets inclus
 
-### 🏢 06-agency-corporate/
-Sites d'agences et entreprises
-- `eurecah-agency-remake` - Agence Eurecah
-- `refokus-websitedesign` - Refokus design
-- `brandbeet-design` - Brandbeet agency
+Les projets versionnés dans ce dépôt sont :
 
-### 🧩 07-templates-components/
-Templates réutilisables et composants
-- `Smoooth-Image-Slider` - Slider d'images fluide
-- `ochi.design-UI-Clone` - Clone Ochi Design
-- `proj_web_awwwards_Flow-Party` - Flow Party
+- `3d-glass-effect`, `3d-image-cube`, `3d-image-curve`, `3dbook-slider`, `image-manipulation-with-webgl`
+- `Elementis-SOTD`, `Mason-Mint-Awwwards`, `award-winning-website`, `awwwards-adidas`, `awwwards-portfolio`, `splyt-awwwards-website`, `the-line-awwwards-SOTM`
+- `Axel-Vanhessche-Portfolio`, `musabhassan.com`, `nextjs_portfolio`, `obys-clone`
+- `Fluid-simulation-experiment`, `animated-gradient`, `lusion-fluid-experiment`
+- `makepill-redesign`
+- `brandbeet-design`, `eurecah-agency-remake`, `refokus-websitedesign`
+- `Smoooth-Image-Slider`, `ochi.design-UI-Clone`, `proj_web_awwwards_Flow-Party`
+- `modern-website`, `motion-website`
+- `codrops-cinematic-scroll-animations`, `codrops-noise-transition`, `gsap-threejs-codrops`, `organic-gradients-shader`, `r3f-image-reveal-effect`
+- `shoe-finder`
+- `unified-animation-hub/apps/web`
 
-### 📚 08-learning-examples/
-Projets d'apprentissage et démos techniques
-- `motion-website` - Site animations motion
-- `modern-website` - Site web moderne
+## Stack rencontrée
 
-### 🎨 09-codrops-experiments/
-Expériences WebGL et shaders avancés
-- `codrops-cinematic-scroll-animations` - Scroll 3D cinématique GSAP
-- `codrops-noise-transition` - Transition texture et bruit procédural
-- `gsap-threejs-codrops` - Galerie pixel avec effet WebGL
-- `organic-gradients-shader` - Gradients organiques animés
-- `r3f-image-reveal-effect` - Révélation d'image avec shader
+Selon les projets, on retrouve principalement :
 
-### 🛍️ 10-3d-commerce/
-E-commerce et produits 3D interactifs
-- `shoe-finder` - Browseur 3D de chaussures
+- `Next.js`, `React`, `TypeScript`
+- `Three.js`, `React Three Fiber`, `WebGL`
+- `GSAP`, `Framer Motion`
+- `Tailwind CSS`, `SCSS`, `Vite`
 
----
+## Notes
 
-**Total**: 33 projets organisés en 10 catégories thématiques
-
-## Technologies Utilisées
-
-### Frameworks Principaux
-- **Next.js** (React) - Framework principal
-- **React Three Fiber** - 3D/WebGL
-- **GSAP** - Animations JavaScript
-- **Framer Motion** - Animations React
-
-### Styling & Build
-- **TailwindCSS** v4 - Styling moderne
-- **TypeScript** - Typage strict
-- **SCSS/Sass** - CSS avancé
-- **Vite** - Build tool rapide
-
-### Bibliothèques Spécialisées
-- **Three.js** - Graphismes 3D
-- **WebGL** - Rendu GPU
-- **Lottie** - Animations vectorielles
-- **MongoDB/Next-auth** - Backend complet
-
----
-
-**Total**: 33 projets organisés en 10 catégories thématiques
-
-## 📊 Évaluation Complète
-
-Tous les projets ont été évalués et documentés dans le dossier `notes-evaluation/` :
-
-### 🏆 Projets Exceptionnels (5/5)
-- `3d-glass-effect` - WebGL exceptionnel
-- `3d-image-curve` - Animations 3D fluides
-- `image-manipulation-with-webgl` - Manipulation avancée
-- `Elementis-SOTD` - Design Awwwards parfait
-- `Mason-Mint-Awwwards` - Site corporate premium
-- `nextjs_portfolio` - Portfolio Next.js moderne
-- `makepill-redesign` - Agence design exceptionnelle
-- `refokus-websitedesign` - Site corporate parfait
-- `proj_web_awwwards_Flow-Party` - Communauté premium
-- `motion-website` - Healthcare moderne
-- `shoe-finder` - E-commerce 3D révolutionnaire
-- `codrops-cinematic-scroll-animations` - Scroll 3D cinématique
-- `codrops-noise-transition` - Effets WebGL avancés
-- `gsap-threejs-codrops` - Galerie pixel WebGL
-- `organic-gradients-shader` - Gradients organiques
-- `r3f-image-reveal-effect` - Révélation image shader
-
-### 📈 Statistiques Finales
-- **Total projets** : 33/33 ✅
-- **Projets gardés** : 33/33 (100%)
-- **Projets supprimés** : 0/33 (0%)
-- **Note moyenne** : 4.8/5
-
-## 🎯 Résultat
-
-**Collection finale de 33 projets web de haute qualité, tous fonctionnels et prêts à l'emploi !**
-
----
-
-*Évaluation terminée avec succès - Tous les projets ont été testés et approuvés.*🎯
+- Les dépendances installées localement (`node_modules`, `.turbo`, builds) ne sont pas versionnées.
+- Les lockfiles restent versionnables pour conserver un historique fiable des dépendances selon les projets.
+- Les analyses détaillées sont centralisées dans `notes-evaluation/README.md`.

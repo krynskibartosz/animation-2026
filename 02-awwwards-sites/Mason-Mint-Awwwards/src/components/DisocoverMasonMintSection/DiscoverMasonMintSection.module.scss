@@ -1,0 +1,53 @@
+@import '@/app/styles/variables/breakpoints';
+
+.DiscoverMasonMintSection {
+  height: 500vh;
+  background-color: var(--white);
+}
+
+.stickyContainer{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+
+  &::before{
+    position: absolute;
+    top: 20%;
+    right: 176rem;
+    width: 1539rem;
+    height: 1710rem;
+    background-image: url("/images/home/circled_arrow_bg.svg");
+    background-size: 1539rem 1710rem;
+    content: '';
+
+    @media(width <= $breakpoint-mob) {
+      right: 0;
+    }
+  }
+}
+
+.imageContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 496rem;
+  height: 496rem;
+  transform: translate(-50%, -50%);
+  
+    @media(width <= $breakpoint-mob) {
+      width: 210rem;
+      height: 210rem;
+    }
+}
+
+@media(width <= $breakpoint-mob) {
+  .DiscoverMasonMintSection {
+    margin-top: -50rem;
+  }
+}

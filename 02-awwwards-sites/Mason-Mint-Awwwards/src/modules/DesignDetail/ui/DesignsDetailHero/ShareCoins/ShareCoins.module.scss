@@ -1,0 +1,62 @@
+@import '@/app/styles/variables/breakpoints';
+
+.ShareCoins{
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.linksList {
+  display: flex;
+  gap: 24rem;
+}
+
+.icon{
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toast{
+  column-gap: 16px;
+  
+    & > div{
+      &:nth-child(1){
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+          
+          & > div{
+              &:nth-child(2){
+                transform: scale(1.5);
+              }
+          }
+      }
+      
+      &:nth-child(2){
+        margin: 0;
+      }
+    }
+  
+    &-success{
+      & > div {
+        &:nth-child(1) {
+          background-color: var(--success);
+        }
+      }
+    }
+
+    &-error{
+      & > div {
+        &:nth-child(1) {
+          background-color: var(--error);
+        }
+      }
+    }
+}
+
+@media (width <= $breakpoint-mob) {
+  .linksList {
+    gap: 40rem;
+  }
+}

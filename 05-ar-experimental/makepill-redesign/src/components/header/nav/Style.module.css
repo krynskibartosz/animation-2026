@@ -1,0 +1,44 @@
+
+.underline {
+    width: 4vw;
+    height: 0.1vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline::after {
+    content: "";
+    width: 0%;
+    height: 0.1vh;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    background-color: #fff;
+    transition: width 0.5s ease; /* Smoot trans ftdh */
+}
+
+.ptag:hover .underline::after {
+    width: 100%; /* Expand to full width on hover */
+}
+
+
+.pill video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: z-index 0.5s;
+    opacity: 0;
+}
+
+.pill video[data-id="1"] {
+    z-index: 10;
+    opacity: 1;
+    
+}
+.textmain {
+    transition: all 0.3d ease-in-out;
+}
+
+.textmain:hover {
+    color: #fff;
+}

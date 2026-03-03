@@ -1,0 +1,38 @@
+@import '@/app/styles/variables/breakpoints';
+
+.HomeContent {
+  display: block;
+
+  // padding-bottom: 164rem;
+}
+
+.storyWrapper {
+  position: relative;
+  z-index: 2;
+  background-color: var(--white);
+}
+
+.discoverMasonMintWrapper {
+  top: 0;
+  bottom: 0;
+
+}
+
+.fixedWrapper{
+  height: 200vh;
+}
+
+.fixed{
+  position: sticky;
+  top: 0;
+
+  // bottom: 0;
+
+  // height: 500vh;
+}
+
+@media (width<=$breakpoint-mob) {
+  .HomeContent {
+    padding-bottom: 0;
+  }
+}

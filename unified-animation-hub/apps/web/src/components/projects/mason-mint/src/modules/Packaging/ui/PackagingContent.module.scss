@@ -1,0 +1,12 @@
+.PackagingContent {
+  display: block;
+}
+
+@media (width<=$breakpoint-mob) {
+  .PackagingContent {
+    .HeroInner{
+      height: 352rem;
+      min-height: 352rem;
+    }
+  }
+}

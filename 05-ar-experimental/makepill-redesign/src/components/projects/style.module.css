@@ -1,0 +1,58 @@
+
+
+.projectVideoDiv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: '#0f0f0f5e';
+    z-index: 1;
+}
+
+
+.pjtFull {
+    transition: all .1s ease;
+    cursor: pointer;
+}
+
+
+.pjtRttxt h3, .pjtRttxt .spcArr{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .5s ease;
+}
+
+.pjtFull:hover .pjtRttxt h3, .pjtFull:hover .pjtRttxt .spcArr{
+    opacity: 1;
+    transform: translateY(0);
+}
+.pjtFull:hover {
+    color: white;
+}
+
+.arrowDiv {
+    transform-origin: top right;
+    transition: all .5s;
+}
+
+.arrowDiv1 {
+    transform: scale(0);
+    transform-origin: left bottom;
+   transition: all .5s;  
+}
+
+.containerprj:hover {
+  color: '#fff';
+}
+
+.containerprj:hover .arrowDiv  {
+    transform: scale(0);
+
+}
+
+.containerprj:hover .arrowDiv1  {
+    transform: scale(1);
+
+}
