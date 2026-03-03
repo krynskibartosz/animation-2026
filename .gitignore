@@ -58,3 +58,8 @@ temp/
 
 # TypeScript
 *.tsbuildinfo
+
+# Local archives and consolidated workspace duplicates
+assets/
+unified-animation-hub/
+nextjsllms.txt

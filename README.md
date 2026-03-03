@@ -19,12 +19,9 @@ Le dépôt regroupe 35 projets principaux, organisés par thème :
 
 Le dépôt contient aussi :
 
-- `assets/` : médias source, vidéos, images et modèles 3D
 - `notes-evaluation/` : notes d'analyse et d'évaluation projet par projet
 - `apps/` : composants applicatifs isolés au niveau racine
-- `unified-animation-hub/` : espace de consolidation avec app web et scripts
 - `integration-guide.md` : guide d'intégration
-- `nextjsllms.txt` : notes de travail complémentaires
 
 ## Projets inclus
 
@@ -40,7 +37,6 @@ Les projets versionnés dans ce dépôt sont :
 - `modern-website`, `motion-website`
 - `codrops-cinematic-scroll-animations`, `codrops-noise-transition`, `gsap-threejs-codrops`, `organic-gradients-shader`, `r3f-image-reveal-effect`
 - `shoe-finder`
-- `unified-animation-hub/apps/web`
 
 ## Stack rencontrée
 
@@ -55,4 +51,5 @@ Selon les projets, on retrouve principalement :
 
 - Les dépendances installées localement (`node_modules`, `.turbo`, builds) ne sont pas versionnées.
 - Les lockfiles restent versionnables pour conserver un historique fiable des dépendances selon les projets.
+- Les dossiers `assets/` et `unified-animation-hub/` restent disponibles localement mais sont exclus du dépôt GitHub pour réduire fortement le poids du repository.
 - Les analyses détaillées sont centralisées dans `notes-evaluation/README.md`.

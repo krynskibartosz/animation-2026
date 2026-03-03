@@ -1,3 +1,0 @@
-Sitemap: https://musabhassan.com/sitemap.xml
-User-Agent: *
-Allow: /
